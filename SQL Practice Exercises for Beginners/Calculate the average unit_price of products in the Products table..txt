@@ -1,0 +1,4 @@
+Calculate the average unit_price of products in the Products table.
+
+SELECT AVG(unit_price) AS average_unit_price 
+FROM Products;

@@ -1,0 +1,5 @@
+Retrieve the product_name and unit_price from the Products table, ordering the results by unit_price in descending order.
+
+SELECT product_name, unit_price 
+FROM Products 
+ORDER BY unit_price DESC;

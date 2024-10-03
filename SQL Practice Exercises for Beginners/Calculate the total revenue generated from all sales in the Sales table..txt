@@ -1,0 +1,4 @@
+Calculate the total revenue generated from all sales in the Sales table.
+
+SELECT SUM(total_price) AS total_revenue 
+FROM Sales;

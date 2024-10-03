@@ -1,0 +1,4 @@
+Retrieve the total_price of all sales, rounding the values to two decimal places
+
+SELECT ROUND(SUM(total_price), 2) AS total_sales 
+FROM Sales;

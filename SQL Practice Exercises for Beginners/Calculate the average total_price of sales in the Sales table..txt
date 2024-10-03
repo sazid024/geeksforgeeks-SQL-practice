@@ -1,0 +1,4 @@
+Calculate the average total_price of sales in the Sales table.
+
+SELECT AVG(total_price) AS average_total_price 
+FROM Sales;

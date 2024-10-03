@@ -1,0 +1,5 @@
+Retrieve the sale_id, product_id, and total_price from the Sales table for sales with a quantity_sold greater than 4.
+
+SELECT sale_id, product_id, total_price 
+FROM Sales 
+WHERE quantity_sold > 4;

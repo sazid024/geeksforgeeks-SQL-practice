@@ -1,0 +1,3 @@
+Filter the Sales table to show only sales with a total_price greater than $100.
+
+SELECT * FROM Sales WHERE total_price > 100;

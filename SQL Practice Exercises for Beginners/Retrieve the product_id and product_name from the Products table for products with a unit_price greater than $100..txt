@@ -1,0 +1,5 @@
+Retrieve the product_id and product_name from the Products table for products with a unit_price greater than $100.
+
+SELECT product_id, product_name 
+FROM Products 
+WHERE unit_price > 100;

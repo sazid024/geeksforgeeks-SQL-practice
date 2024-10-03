@@ -1,0 +1,4 @@
+Calculate the total quantity_sold from the Sales table.
+
+SELECT SUM(quantity_sold) AS total_quantity_sold 
+FROM Sales;

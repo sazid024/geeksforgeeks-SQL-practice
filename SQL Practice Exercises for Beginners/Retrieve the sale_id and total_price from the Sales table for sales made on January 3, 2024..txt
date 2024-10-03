@@ -1,0 +1,3 @@
+Retrieve the sale_id and total_price from the Sales table for sales made on January 3, 2024.
+
+SELECT sale_id, total_price FROM sales WHERE sale_date = '2024-01-03';
