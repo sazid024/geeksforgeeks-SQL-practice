@@ -1,1 +1,0 @@
-SELECT sale_id, sale_date from sales;

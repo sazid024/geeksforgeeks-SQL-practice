@@ -1,0 +1,5 @@
+Retrieve the product_name and total_price from the Sales table, calculating the total_price as quantity_sold multiplied by unit_price.
+
+SELECT product_name, quantity_sold * unit_price AS total_price 
+FROM Sales 
+JOIN Products ON Sales.product_id = Products.product_id;

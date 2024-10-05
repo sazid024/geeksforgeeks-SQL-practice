@@ -1,0 +1,3 @@
+Retrieve the sale_id and sale_date from the Sales table.
+
+SELECT sale_id, sale_date from sales;
