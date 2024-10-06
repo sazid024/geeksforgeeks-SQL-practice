@@ -1,0 +1,6 @@
+Extract the month and year from the sale date and count the number of sales for each month.
+
+SELECT CONCAT(YEAR(sale_date), '-', LPAD(MONTH(sale_date), 2, '0')) AS month,
+       COUNT(*) AS sales_count
+FROM Sales
+GROUP BY YEAR(sale_date), MONTH(sale_date);

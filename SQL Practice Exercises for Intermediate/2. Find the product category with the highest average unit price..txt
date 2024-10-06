@@ -1,0 +1,7 @@
+Find the product category with the highest average unit price.
+
+SELECT category
+FROM Products
+GROUP BY category
+ORDER BY AVG(unit_price) DESC
+LIMIT 1;

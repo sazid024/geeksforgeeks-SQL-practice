@@ -1,0 +1,7 @@
+Identify products with total sales exceeding 30.
+
+SELECT p.product_name
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id
+GROUP BY p.product_name
+HAVING SUM(s.total_price) > 30;

@@ -1,0 +1,5 @@
+7. List all sales along with the corresponding product names.
+
+SELECT s.sale_id, p.product_name
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id;

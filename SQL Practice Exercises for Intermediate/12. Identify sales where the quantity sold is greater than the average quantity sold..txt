@@ -1,0 +1,5 @@
+Identify sales where the quantity sold is greater than the average quantity sold.
+
+SELECT *
+FROM Sales
+WHERE quantity_sold > (SELECT AVG(quantity_sold) FROM Sales);

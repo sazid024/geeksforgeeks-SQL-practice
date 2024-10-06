@@ -1,0 +1,6 @@
+Calculate the running total revenue for each product category.
+
+SELECT p.category, p.product_name, s.sale_date, 
+       SUM(s.total_price) OVER (PARTITION BY p.category ORDER BY s.sale_date) AS running_total_revenue
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id;

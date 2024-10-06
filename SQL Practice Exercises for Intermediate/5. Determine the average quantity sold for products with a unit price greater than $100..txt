@@ -1,0 +1,6 @@
+Determine the average quantity sold for products with a unit price greater than $100.
+
+SELECT AVG(s.quantity_sold) AS average_quantity_sold
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id
+WHERE p.unit_price > 100;

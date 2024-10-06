@@ -1,0 +1,8 @@
+Write a query to create a view named Total_Sales that displays the total sales amount for each product along with their names and categories.
+
+CREATE VIEW Total_Sales AS
+SELECT p.product_name, p.category, SUM(s.total_price) AS total_sales_amount
+FROM Products p
+JOIN Sales s ON p.product_id = s.product_id
+GROUP BY p.product_name, p.category;
+SELECT * FROM Total_Sales;

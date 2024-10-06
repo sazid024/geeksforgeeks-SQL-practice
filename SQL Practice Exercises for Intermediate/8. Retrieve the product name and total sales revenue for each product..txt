@@ -1,0 +1,10 @@
+Retrieve the product name and total sales revenue for each product.
+
+SELECT p.category, 
+       SUM(s.total_price) AS category_revenue,
+       (SUM(s.total_price) / (SELECT SUM(total_price) FROM Sales)) * 100 AS revenue_percentage
+FROM Sales s
+JOIN Products p ON s.product_id = p.product_id
+GROUP BY p.category
+ORDER BY revenue_percentage DESC
+LIMIT 3;
